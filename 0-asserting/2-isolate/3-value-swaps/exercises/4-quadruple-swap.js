@@ -14,6 +14,32 @@ let temp;
 
 // --- swap values ---
 
+temp = a;
+console.assert(temp === 'y');
+console.assert(a === 'y');
+
+a = c;
+console.assert(a === 'w');
+console.assert(c === 'w');
+
+c = temp;
+console.assert(c = 'y');
+console.assert(temp = 'y')
+
+temp = b;
+console.assert(temp = 'z');
+console.assert(b = 'z')
+
+b = d;
+console.assert(b === 'x');
+console.assert(d === 'x');
+
+d = temp;
+console.assert(d = 'z');
+console.assert(temp = 'z')
+
+
+
 // --- test final values ---
 
 const test1 = a === 'w';
@@ -28,7 +54,7 @@ console.assert(test3, 'Test 3');
 const test4 = d === 'z';
 console.assert(test4, 'Test 4');
 
-const test5 = temp === _;
+const test5 = temp === 'z';
 console.assert(test5, 'Test 5');
 
 console.log('-- end --');
