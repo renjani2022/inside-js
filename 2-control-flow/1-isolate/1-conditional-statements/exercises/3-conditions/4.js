@@ -15,11 +15,11 @@ const value2 = 200;
 const value3 = false;
 let path = '';
 
-if (_) {
+if (Number(value1) > Number(value2) && Boolean(!value2)) {
   path = 'if';
-} else if (_) {
+} else if (Number(value1) < Number(value2) && Boolean(!value3)) {
   path = 'else if 1';
-} else if (_) {
+} else if (Number(value2) === Number(value1) && Boolean(!value3)) {
   path = 'else if 2';
 } else {
   path = 'else';

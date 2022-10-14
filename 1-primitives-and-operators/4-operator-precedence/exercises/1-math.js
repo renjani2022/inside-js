@@ -30,7 +30,7 @@ const h = (4 % 2) + 3;
 console.assert(h === 3, 'h');
 
 const i = 4 % (2 + 3);
-console.assert(i === 0, 'i');
+console.assert(i === NaN, 'i');
 
 // --- beware of NaN! ---
 //  remember implicit coercion?

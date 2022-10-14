@@ -13,6 +13,11 @@ for (let i = minutesLeft; i > 0; i--) {
 
 // refactor this for loop to a while loop
 
-while (_) {}
+while ( minutesLeft <= 0) {
+  const message = `${i} minutes left`;
+  console.log(message);
+}
+
+
 
 console.log('-- end --');

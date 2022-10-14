@@ -16,14 +16,16 @@ const originalString = 'abcde';
 console.log('originalString:', originalString);
 
 let reversedString = '';
+let word = originalString.length
 
-for (_; _; _) {
-  const nextLetter = _;
-  reversedString = _;
+for (let i = word-1; i >= 0; i--) {
+  const nextLetter = originalString [i];
+  reversedString += nextLetter;
 
-  console.log(_); // your stepper variable
+  console.log(reversedString); // your stepper variable
   console.log('reversedString:', reversedString);
 }
+
 
 console.assert(
   reversedString === 'edcba',

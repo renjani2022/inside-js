@@ -17,3 +17,52 @@ iExist();
 // there are 3 logs, and one console.log in the source code
 //  console.log is not run when the function is DECLARED
 //  but it is run each time the function is EXECUTED
+
+
+
+/*
+function myFirstFunction (name, age) {
+  if (age >= 18) {
+    console.log('You can drive' + name); 
+  } else {
+    console.log ('You can Not drive $(name)');
+  }
+}
+
+*/
+
+
+const myFirstFunction = (name, age) => {
+  if (age >= 18) {
+    console.log('You can drive' + name); 
+  } else {
+    console.log ('You can Not drive $(name)');
+  }
+}
+
+const myArrowFirstFunction = (name, age) => {
+  if (age >= 18) {
+    console.log('You can drive' + name); 
+  } else {
+    console.log ('You can Not drive $(name)');
+  }
+}
+
+
+myFirstFunction('Jane', 16);
+
+myArrowFirstFunction ('John', 25);
+  
+console.log(name);
+
+
+
+const global = 'This is global';
+
+function blockScope (black) {
+  console.log('global is:', global, '/// local is: ', block)
+}
+
+blockScope('block variable')
+
+console.log('global is:', global, '/// local is: ', block)
